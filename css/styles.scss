@@ -11,6 +11,12 @@ header {
     position: fixed;
     width: 100%;
     z-index: 99;
+    background-color: transparent;
+    transition: background-color .3s ease;
+    .back_nav {
+        background-color: $ligth_white;
+        transition: background-color .3s ease;
+    }
     nav {
         .navbar-nav {
             li {
@@ -26,36 +32,39 @@ header {
 }
 
 .main_banner {
-    background: url('../img/main_banner.jpg');
+    background: url('../img/main_banner_2.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center left;
     height: 70vh;
     .ads {
         display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 25px;
-        background-color: $ligth_white;
-        width: 80%;
+        width: 45%;
         height: 100%;
-        //clip-path: circle(50% at 30% 25%);
         p {
             margin: 0;
+            font-size: 18px;
+            line-height: 23px;
+            font-weight: 500;
         }
         .title {
-            color: #32324c;
-            font-size: 32px;
+            color: $king_blue;
+            font-size: 48px;
             font-weight: 900;
-            line-height: 32px;
+            line-height: 57px;
             text-transform: uppercase;
         }
         .digital {
-            color: #6139c6;
-            font-size: 32px;
+            color: $king_blue;
+            font-size: 48px;
+            line-height: 57px;
             font-weight: 900;
             text-align: left;
             font-style: italic;
             text-transform: uppercase;
+            background-color: $turques;
         }
         hr {
             width: 100%;
@@ -66,9 +75,11 @@ header {
 .ventajas {
     background: linear-gradient(to top, $ligth_white 20%, transparent 0);
     padding: 25px 0;
+    position: relative;
     .item_ventaja {
         height: 100%;
         background-color: white;
+        padding: 10px;
         .icon {
             background-color: $turques;
             border-radius: 35px;
@@ -99,6 +110,7 @@ header {
         .blue_box {
             background-color: $turques;
             padding: 15px 10px;
+            position: relative;
             ul {
                 margin-bottom: 0;
                 li {
@@ -106,6 +118,16 @@ header {
                     font-size: 13px;
                     font-weight: 500;
                 }
+            }
+            .arrow-down {
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid white;
+                position: absolute;
+                top: 0;
+                left: 45%;
             }
         }
         .ventajas_stars {
@@ -117,6 +139,12 @@ header {
                 margin-bottom: 10px;
             }
         }
+    }
+    img {
+        width: 120px;
+        position: absolute;
+        top: 90%;
+        left: 85%;
     }
 }
 
@@ -133,7 +161,6 @@ header {
 
 .middle_banner_lap {
     background: url('../img/back_middle_banner.png'), $ligth_white;
-    background-position: bottom;
     background-size: cover;
     height: 80vh;
     .h-100 {
@@ -153,6 +180,271 @@ header {
         span {
             font-size: 18px;
             line-height: 25px;
+        }
+    }
+}
+
+.blue_banner {
+    background-color: $turques;
+    padding: 20px;
+    position: relative;
+    i {
+        margin: 0 auto;
+        display: table;
+        font-size: 60px;
+        padding: 10px 0 0;
+        color: $king_blue;
+    }
+    .text {
+        color: $king_blue;
+        font-size: 25px;
+        line-height: 34px;
+        text-align: center;
+        padding: 15px 0;
+        font-weight: 700;
+    }
+    .arrow-down {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $turques;
+        position: absolute;
+        top: 100%;
+        left: 10%;
+    }
+}
+
+.contact {
+    padding: 40px 20px 60px;
+    .block_input {
+        padding: 5px 0;
+        label {
+            font-size: 17px;
+            line-height: 15px;
+            color: $king_blue;
+            font-weight: 500;
+            margin: 0;
+        }
+        input {
+            background-color: #EBEBEB;
+            border: none;
+            width: 100%;
+            height: 29px;
+        }
+    }
+    .block_check {
+        padding: 5px 0;
+        label {
+            font-size: 17px;
+            line-height: 22px;
+            color: $king_blue;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+    .contact_us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding-left: 10px;
+        border-left: 2px solid $king_blue;
+        .title {
+            font-size: 20px;
+            line-height: 25px;
+            color: $king_blue;
+            font-weight: 800;
+            font-style: italic;
+            margin-bottom: 10px;
+            background-color: $turques;
+        }
+        .options {
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 600;
+            color: $king_blue;
+            margin-bottom: 5px;
+            i {
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+}
+
+.differences {
+    .dep_cont {
+        .header {
+            background-color: $turques;
+            padding: 20px 10px;
+            p {
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 900;
+                font-style: italic;
+                color: $king_blue;
+                margin: 0;
+                text-align: center;
+            }
+        }
+        .list {
+            width: 90%;
+            padding: 20px;
+            ul {
+                li {
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: $king_blue;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .otros {
+        .header {
+            background-color: #999999;
+            padding: 20px 10px;
+            p {
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 900;
+                font-style: italic;
+                color: white;
+                margin: 0;
+                text-align: center;
+            }
+        }
+        .list {
+            width: 90%;
+            padding: 20px;
+            ul {
+                li {
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #999999;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    span {
+                        font-size: 17px;
+                        font-weight: 300;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.language {
+    background: url('../img/back_language.png');
+    background-size: cover;
+    padding-top: 15%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    p.title {
+        font-size: 22px;
+        line-height: 45px;
+        color: $king_blue;
+    }
+    .item {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 15px;
+        img {
+            width: 60px;
+            margin-right: 10px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            color: $king_blue;
+            margin: 0;
+            font-weight: 500;
+            span {
+                font-size: 15px;
+                line-height: 21px;
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+@media(max-width:991px) {
+    .pl-0 {
+        padding-left: 15px!important;
+    }
+    .pr-0 {
+        padding-right: 15px!important;
+    }
+    .main_banner {
+        height: 80vh;
+        .ads {
+            width: 50%;
+        }
+    }
+    .ventajas {
+        img {
+            display: none;
+        }
+    }
+    .middle_banner_lap {
+        background-position: center;
+        .title {
+            width: 65%;
+        }
+    }
+    .language {
+        background-position: right;
+        height: 100%;
+    }
+}
+
+@media(max-width:767px) {
+    header {
+        position: static;
+        background-color: $ligth_white;
+    }
+    .main_banner {
+        .ads {
+            width: 70%;
+        }
+    }
+    .middle_banner_lap {
+        background-position: right;
+        .title {
+            width: 100%;
+            font-size: 30px;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .main_banner {
+        height: 45vh;
+        .ads {
+            width: 100%;
+            .title,
+            .digital {
+                font-size: 34px;
+                line-height: 38px;
+            }
+        }
+    }
+    .middle_banner_lap {
+        height: 60vh;
+    }
+    .contact {
+        .contact_us {
+            .options {
+                font-size: 14px;
+            }
         }
     }
 }
