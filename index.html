@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Departamento Contable</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,8 @@
     <meta property="og:image" content="">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" href="img/favicon.jpg">
+    <link rel="apple-touch-icon" href="img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -38,13 +39,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Ventajas</a>
+                            <a class="nav-link" href="#ventajas">Ventajas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Registro</a>
+                            <a class="nav-link" href="#registro">Registro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -67,7 +68,7 @@
             <p>Servicios de contabilidad e impuestos para empresarios y profesionales que quieran dormir tranquilos</p>
         </div>
     </div>
-    <div class="ventajas">
+    <div id="ventajas" class="ventajas">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
@@ -165,64 +166,81 @@
         </div>
         <div class="arrow-down"></div>
     </div>
-    <div class="contact">
+    <div id="registro" class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="contact_form">
-                        <form action="">
-                            <div class="block_input">
+                        <form accept-charset="UTF-8" action="https://hb763.infusionsoft.com/app/form/process/19f4c686aace99f4dc4a2c3d6a374a2b" class="infusion-form" id="inf_form_19f4c686aace99f4dc4a2c3d6a374a2b" method="POST">
+                            <input name="inf_form_xid" type="hidden" value="19f4c686aace99f4dc4a2c3d6a374a2b" />
+                            <input name="inf_form_name" type="hidden" value="WF Quiero platicar. Despacho digital. AW" />
+                            <input name="infusionsoft_version" type="hidden" value="1.70.0.272871" />
+                            <div class="infusion-field">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
-                                        <label for="input_name">Nombre:</label>
+                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <label for="inf_field_FirstName">Nombre *</label>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-                                        <input id="input_name" type="text" name="nombre">
+                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                        <input class="infusion-field-input" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="Nombre *" type="text" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="block_input">
+                            <div class="infusion-field">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
-                                        <label for="input_lastname">Apellido:</label>
+                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <label for="inf_field_LastName">Apellidos *</label>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-                                        <input id="input_lastname" type="text" name="apellido">
+                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                        <input class="infusion-field-input" id="inf_field_LastName" name="inf_field_LastName" placeholder="Apellidos *" type="text" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="block_input">
+                            <div class="infusion-field">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
-                                        <label for="input_cell">Celular:</label>
+                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <label for="inf_field_Phone1">Celular *</label>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-                                        <input id="input_cell" type="number" name="mobile">
+                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                        <input class="infusion-field-input" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Celular *" type="text" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="block_input">
+                            <div class="infusion-field">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
-                                        <label for="input_email">Correo:</label>
+                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <label for="inf_field_Phone2">&iquest;Otro tel&eacute;fono?</label>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-                                        <input id="input_email" type="email" name="email">
+                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                        <input class="infusion-field-input" id="inf_field_Phone2" name="inf_field_Phone2" placeholder="&iquest;Otro tel&eacute;fono?" type="text" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="block_check">
-                                <label for="">SÍ, QUIERO PLATICAR CON USTEDES<br>SOBRE MI SITUACIÓN FISCAL Y CONTABLE</label>
-                                <input type="checkbox" name="">
+                            <div class="infusion-field">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <label for="inf_field_Email">Email *</label>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                        <input class="infusion-field-input" id="inf_field_Email" name="inf_field_Email" placeholder="Email *" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>&nbsp;</div>
+                            </div>
+                            <div class="infusion-submit">
+                                <button type="submit">S&iacute;, quiero platicar con ustedes sobre mi situaci&oacute;n fiscal y contable</button>
                             </div>
                         </form>
+                        <script type="text/javascript" src="https://hb763.infusionsoft.app/app/webTracking/getTrackingCode"></script>
+                        <script type="text/javascript" src="https://hb763.infusionsoft.com/app/timezone/timezoneInputJs?xid=19f4c686aace99f4dc4a2c3d6a374a2b"></script>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="contact_us">
                         <p class="title">Contáctanos aquí:</p>
-                        <p class="options"><i class="fas fa-envelope"></i>contacto@contadoresmismolenguaje.mx</p>
-                        <p class="options"><i class="fab fa-whatsapp"></i>55 66 62 31 76</p>
+                        <a href="mailto:contacto@contadoresmismolenguaje.mx" class="options" target="_blank"><i class="fas fa-envelope"></i>contacto@contadoresmismolenguaje.mx</a>
+                        <a href="https://api.whatsapp.com/send?phone=525566623176" class="options" target="_blank"><i class="fab fa-whatsapp"></i>55 66 62 31 76</a>
                     </div>
                 </div>
             </div>
@@ -307,64 +325,81 @@
         </div>
         <div class="arrow-down"></div>
     </div>
-    <div class="contact">
+    <div id="contacto" class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="contact_form">
-                        <form action="">
-                            <div class="block_input">
+                        <form accept-charset="UTF-8" action="https://hb763.infusionsoft.com/app/form/process/19f4c686aace99f4dc4a2c3d6a374a2b" class="infusion-form" id="inf_form_19f4c686aace99f4dc4a2c3d6a374a2b" method="POST">
+                            <input name="inf_form_xid" type="hidden" value="19f4c686aace99f4dc4a2c3d6a374a2b" />
+                            <input name="inf_form_name" type="hidden" value="WF Quiero platicar. Despacho digital. AW" />
+                            <input name="infusionsoft_version" type="hidden" value="1.70.0.272871" />
+                            <div class="infusion-field">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
-                                        <label for="input_name">Nombre:</label>
+                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <label for="inf_field_FirstName">Nombre *</label>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-                                        <input id="input_name" type="text" name="nombre">
+                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                        <input class="infusion-field-input" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="Nombre *" type="text" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="block_input">
+                            <div class="infusion-field">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
-                                        <label for="input_lastname">Apellido:</label>
+                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <label for="inf_field_LastName">Apellidos *</label>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-                                        <input id="input_lastname" type="text" name="apellido">
+                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                        <input class="infusion-field-input" id="inf_field_LastName" name="inf_field_LastName" placeholder="Apellidos *" type="text" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="block_input">
+                            <div class="infusion-field">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
-                                        <label for="input_cell">Celular:</label>
+                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <label for="inf_field_Phone1">Celular *</label>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-                                        <input id="input_cell" type="number" name="mobile">
+                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                        <input class="infusion-field-input" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Celular *" type="text" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="block_input">
+                            <div class="infusion-field">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
-                                        <label for="input_email">Correo:</label>
+                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <label for="inf_field_Phone2">&iquest;Otro tel&eacute;fono?</label>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-                                        <input id="input_email" type="email" name="email">
+                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                        <input class="infusion-field-input" id="inf_field_Phone2" name="inf_field_Phone2" placeholder="&iquest;Otro tel&eacute;fono?" type="text" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="block_check">
-                                <label for="">SÍ, QUIERO PLATICAR CON USTEDES<br>SOBRE MI SITUACIÓN FISCAL Y CONTABLE</label>
-                                <input type="checkbox" name="">
+                            <div class="infusion-field">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <label for="inf_field_Email">Email *</label>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                        <input class="infusion-field-input" id="inf_field_Email" name="inf_field_Email" placeholder="Email *" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>&nbsp;</div>
+                            </div>
+                            <div class="infusion-submit">
+                                <button type="submit">S&iacute;, quiero platicar con ustedes sobre mi situaci&oacute;n fiscal y contable</button>
                             </div>
                         </form>
+                        <script type="text/javascript" src="https://hb763.infusionsoft.app/app/webTracking/getTrackingCode"></script>
+                        <script type="text/javascript" src="https://hb763.infusionsoft.com/app/timezone/timezoneInputJs?xid=19f4c686aace99f4dc4a2c3d6a374a2b"></script>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="contact_us">
                         <p class="title">Contáctanos aquí:</p>
-                        <p class="options"><i class="fas fa-envelope"></i>contacto@contadoresmismolenguaje.mx</p>
-                        <p class="options"><i class="fab fa-whatsapp"></i>55 66 62 31 76</p>
+                        <a href="mailto:contacto@contadoresmismolenguaje.mx" class="options" target="_blank"><i class="fas fa-envelope"></i>contacto@contadoresmismolenguaje.mx</a>
+                        <a href="https://api.whatsapp.com/send?phone=525566623176" class="options" target="_blank"><i class="fab fa-whatsapp"></i>55 66 62 31 76</a>
                     </div>
                 </div>
             </div>

@@ -111,6 +111,10 @@ header {
             background-color: $turques;
             padding: 15px 10px;
             position: relative;
+            height: 0;
+            max-height: 1px;
+            overflow: hidden;
+            transition: max-height .5s ease;
             ul {
                 margin-bottom: 0;
                 li {
@@ -128,6 +132,11 @@ header {
                 position: absolute;
                 top: 0;
                 left: 45%;
+            }
+            &:hover {
+                max-height: 250px;
+                height: auto;
+                transition: max-height .5s ease;
             }
         }
         .ventajas_stars {
@@ -217,7 +226,7 @@ header {
 
 .contact {
     padding: 40px 20px 60px;
-    .block_input {
+    .infusion-field {
         padding: 5px 0;
         label {
             font-size: 17px;
@@ -233,6 +242,9 @@ header {
             height: 29px;
         }
     }
+    .infusion-submit {
+        padding-bottom: 10px;
+    }
     .block_check {
         padding: 5px 0;
         label {
@@ -243,6 +255,14 @@ header {
             margin: 0;
         }
     }
+    button {
+        border: none;
+        background-color: $turques;
+        color: $king_blue;
+        font-size: 22px;
+        font-weight: 700;
+        padding: 10px;
+    }
     .contact_us {
         display: flex;
         flex-direction: column;
@@ -250,6 +270,8 @@ header {
         height: 100%;
         padding-left: 10px;
         border-left: 2px solid $king_blue;
+        padding-top: 15px;
+        padding-bottom: 15px;
         .title {
             font-size: 20px;
             line-height: 25px;
@@ -258,6 +280,7 @@ header {
             font-style: italic;
             margin-bottom: 10px;
             background-color: $turques;
+            text-decoration: underline;
         }
         .options {
             font-size: 18px;
@@ -265,6 +288,7 @@ header {
             font-weight: 600;
             color: $king_blue;
             margin-bottom: 5px;
+            text-decoration: underline;
             i {
                 margin: 0 10px 0 0;
             }
@@ -438,7 +462,7 @@ header {
         }
     }
     .middle_banner_lap {
-        height: 60vh;
+        height: 100%;
     }
     .contact {
         .contact_us {
